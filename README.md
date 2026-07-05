@@ -39,6 +39,14 @@ cp .env.example .env
   2. Copia a chave secreta de teste para `STRIPE_SECRET_KEY`
   3. Corre `stripe listen --forward-to localhost:3000/api/webhooks/stripe`
      localmente e usa o `whsec_...` gerado como `STRIPE_WEBHOOK_SECRET`
+- `ADMIN_PASSWORD` — password para entrar no painel de administração. Muda
+  o valor por omissão (`admin123`) antes de publicar o site.
+
+## Painel de administração
+
+Em [http://localhost:3000/admin](http://localhost:3000/admin) podes gerir os
+produtos (criar, editar, apagar) através de um formulário simples, protegido
+pela password definida em `ADMIN_PASSWORD`.
 
 ## Estrutura
 

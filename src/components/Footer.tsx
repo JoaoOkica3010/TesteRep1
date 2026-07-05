@@ -56,7 +56,10 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} DiverStore. Todos os direitos reservados.
+        © {new Date().getFullYear()} DiverStore. Todos os direitos reservados.{" "}
+        <Link href="/admin" className="hover:text-white/80">
+          Admin
+        </Link>
       </div>
     </footer>
   );
